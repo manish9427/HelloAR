@@ -1,10 +1,25 @@
-import "./App.css";
-import ProductPage from "./productPage/productPage";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./header/Header";
+import FakeStore from "./fakeStrore/FakeStrore";
+// import TodoApp from "./TodoApp";
+// import Counter from "./Counter";
+// import Timer from "./Timer";
+
 function App() {
   return (
-    <div>
-      <ProductPage />
-    </div>
+    <Router>
+      <div>
+        {/* <Header /> */}
+        <Routes>
+          <Route path="/" element={<Header />} />
+          <Route path="/fakestore" element={<FakeStore />} />
+          {/* <Route path="/todoapp" element={<TodoApp />} /> */}
+          {/* <Route path="/counter" element={<Counter />} /> */}
+          {/* <Route path="/timer" element={<Timer />} /> */}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
