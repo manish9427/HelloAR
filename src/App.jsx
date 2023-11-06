@@ -9,8 +9,8 @@ import FakeStore from "./fakeStrore/FakeStrore";
 function App() {
   return (
     <Router>
+      <Header />
       <div>
-        {/* <Header /> */}
         <Routes>
           <Route path="/" element={<Header />} />
           <Route path="/fakestore" element={<FakeStore />} />
