@@ -1,3 +1,13 @@
 .mainDiv {
   text-align: center;
+  box-shadow: 0px 0px 10px black;
+  width: 300px;
+  margin: 10px auto;
+  padding: 30px;
+  img {
+    height: 300px;
+  }
+  h1 + p {
+    font-size: 10px;
+  }
 }
