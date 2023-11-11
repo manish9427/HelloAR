@@ -1,5 +1,5 @@
 import React from "react";
-import FakeStore from "./fakeStrore/FakeStore";
+import FakeStore from "./components/fakeStore/FakeStore";
 function App() {
   return (
     <div>
